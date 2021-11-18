@@ -29,10 +29,9 @@ section__title {
   .section__subtitle--intro,
   .section__subtitle--about {
     background: $clr-accent;
-    font-family: $ff-secondary;
+    font-family: $ff-primary;
     margin-bottom: 1em;
-
-    padding: 0.25em 1em;
+    padding: 5em;
   }
 }
 

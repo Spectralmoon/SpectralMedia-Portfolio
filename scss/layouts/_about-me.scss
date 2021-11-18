@@ -30,6 +30,7 @@
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
+    z-index: -1;
   }
 
   .about-me__img {
