@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: flex-end;
   padding: 0 3em 0 2em;
-  background-color: var(clr-light-dark);
+  background-color: $clr-light-dark;
 }
 .nav__list {
   display: flex;

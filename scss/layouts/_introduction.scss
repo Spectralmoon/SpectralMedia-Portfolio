@@ -8,6 +8,32 @@
 }
 .section__subtitle--intro {
   display: inline-block;
+  background-color: $clr-accent;
+}
+section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: $fw-reg;
+
+  .section__title--intro strong {
+    display: block;
+  }
+
+  .section__subtitle {
+    margin: 0;
+    font-size: $fs-h3;
+  }
+
+  .section__subtitle--intro,
+  .section__subtitle--about {
+    background: $clr-accent;
+    font-family: $ff-secondary;
+    margin-bottom: 1em;
+
+    padding: 0.25em 1em;
+  }
 }
 
 @media (min-width: 600px) {

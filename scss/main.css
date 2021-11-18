@@ -10,9 +10,28 @@ body {
   background-color: #fff;
   color: #303030;
   margin: 0;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 section {
@@ -29,12 +48,56 @@ strong {
   font-size: 3rem;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: 300;
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: #2c8c94;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+}
+
 .nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   padding: 0 3em 0 2em;
-  background-color: var(clr-light-dark);
+  background-color: #7c7c7c;
 }
 
 .nav__list {
@@ -60,6 +123,29 @@ a {
 
 .section__subtitle--intro {
   display: inline-block;
+  background-color: #2c8c94;
+}
+
+section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: 300;
+}
+.section__title--intro .section__title--intro strong {
+  display: block;
+}
+.section__title--intro .section__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.section__title--intro .section__subtitle--intro,
+.section__title--intro .section__subtitle--about {
+  background: #2c8c94;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
 }
 
 @media (min-width: 600px) {
