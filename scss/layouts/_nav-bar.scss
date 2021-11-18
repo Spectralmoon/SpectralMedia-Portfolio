@@ -3,7 +3,9 @@
   width: 100%;
   justify-content: flex-end;
   padding: 0 3em 0 2em;
-  background-color: $clr-light-dark;
+  background-color: $clr-light-accent;
+  position: fixed;
+  top: 0;
 }
 .nav__list {
   display: flex;
@@ -12,6 +14,7 @@
   list-style: none;
   align-items: center;
   justify-content: flex-end;
+  font-weight: $fw-bold;
 }
 a {
   text-decoration: none;

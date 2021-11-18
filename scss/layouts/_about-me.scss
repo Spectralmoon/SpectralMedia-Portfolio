@@ -36,6 +36,6 @@
   .about-me__img {
     grid-area: img;
     position: relative;
-    z-index: 2;
+    z-index: -1;
   }
 }
