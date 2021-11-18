@@ -31,7 +31,7 @@ section__title {
     background: $clr-accent;
     font-family: $ff-primary;
     margin-bottom: 1em;
-    padding: 5em;
+    padding: 9em;
   }
 }
 
@@ -60,7 +60,7 @@ section__title {
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    padding-right: 2.5rem;
+    left: 0.5em;
+    width: calc(100% + 1.5em);
   }
 }

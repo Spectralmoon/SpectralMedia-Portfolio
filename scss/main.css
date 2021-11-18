@@ -97,7 +97,7 @@ h3 {
   width: 100%;
   justify-content: flex-end;
   padding: 0 3em 0 2em;
-  background-color: #a3cacc;
+  background-color: #e0eeef;
   position: fixed;
   top: 0;
 }
@@ -148,7 +148,7 @@ section__title {
   background: #2c8c94;
   font-family: "Jost", sans-serif;
   margin-bottom: 1em;
-  padding: 5em;
+  padding: 9em;
 }
 
 @media (min-width: 600px) {
@@ -174,8 +174,8 @@ section__title {
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
-    padding-right: 2.5rem;
+    left: 0.5em;
+    width: calc(100% + 1.5em);
   }
 }
 @media (min-width: 600px) {
