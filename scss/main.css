@@ -178,11 +178,9 @@ section__title {
 @media (min-width: 600px) {
   .my-services {
     background-color: #303030;
-    background-image: url(/assets/backgrounds/blue_background.jpeg);
-    background-size: cover;
+    background-image: url("../../assets/backgrounds/blue_background.png");
     color: #fff;
     text-align: center;
-    background-blend-mode: multiply;
   }
 
   .section__title--services {
