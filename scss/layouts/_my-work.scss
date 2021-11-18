@@ -1,0 +1,22 @@
+/* My Work */
+
+.my-work {
+  /* background-color: var(--clr-dark); */
+  color: var(--clr-light);
+  text-align: center;
+  background-image: url(/assets/backgrounds/abstract_blue_ball.jpeg);
+}
+.section__subtitle--work {
+  color: var(--clr-light-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+  background: var(--clr-light-dark);
+}
