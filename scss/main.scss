@@ -1,2 +1,19 @@
-@import "base/resets";
-@import "base/media-queries";
+@import "b-custom-properties/root";
+
+@import "a-base/1-resets";
+@import "b-custom-properties/colors";
+@import "b-custom-properties/2-general-styles";
+
+@import "a-base/media-queries";
+
+@import "b-custom-properties/3-typography";
+@import "b-custom-properties/box-shadow";
+@import "b-custom-properties/buttons";
+
+@import "layouts/nav-bar";
+@import "layouts/introduction";
+@import "layouts/my-services";
+@import "layouts/my-work";
+@import "layouts/footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Kalam:wght@300&family=Source+Code+Pro&display=swap");

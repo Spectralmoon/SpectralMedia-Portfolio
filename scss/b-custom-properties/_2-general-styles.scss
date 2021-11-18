@@ -1,9 +1,9 @@
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: $clr-light;
+  color: $clr-dark;
   margin: 0;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-body);
+  font-family: $ff-primary;
+  font-size: $fs-body;
   line-height: 1.6;
 }
 
@@ -17,6 +17,6 @@ img {
 }
 
 strong {
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-h1);
+  font-weight: $fw-bold;
+  font-size: $fs-h1;
 }

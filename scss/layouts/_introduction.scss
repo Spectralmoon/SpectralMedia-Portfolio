@@ -3,7 +3,8 @@
 }
 
 .intro__img {
-  box-shadow: var(--bs);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 .section__subtitle--intro {
   display: inline-block;

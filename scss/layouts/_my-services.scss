@@ -1,15 +1,14 @@
-/*  My services section  */
 @media (min-width: 600px) {
   .my-services {
-    background-color: var(--clr-dark);
+    background-color: $clr-dark;
     background-image: url(/assets/backgrounds/blue_background.jpeg);
     background-size: cover;
-    color: var(--clr-light);
+    color: $clr-light;
     text-align: center;
     background-blend-mode: multiply;
   }
   .section__title--services {
-    color: var(--clr-accent);
+    color: $clr-accent;
     position: relative;
   }
   .section__title--services::after {
@@ -18,7 +17,7 @@
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: $clr-light;
     opacity: 0, 25;
   }
   .service {
@@ -42,7 +41,7 @@
 .flex-parent > * { flex: 1; } */
     }
 
-    .service nth-child(1) {
+    .service :nth-child(1) {
       margin-left: 2em;
     }
   }
@@ -50,19 +49,20 @@
   .btn {
     display: inline-block;
     padding: 0.5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    background: $clr-accent;
+    color: $clr-dark;
     text-decoration: none;
     cursor: pointer;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: var(--fw-bold);
+    font-weight: $fw-bold;
     transition: transform 900ms ease-in-out;
     z-index: 1;
-    color: var(--clr-light);
+    color: $clr-light;
   }
 
   .btn:hover {
     transform: scale(1.1);
   }
+}

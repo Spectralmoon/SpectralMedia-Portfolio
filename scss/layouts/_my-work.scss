@@ -1,15 +1,7 @@
-/* My Work */
-
 .my-work {
-  /* background-color: var(--clr-dark); */
-  color: var(--clr-light);
+  background-color: $clr-dark;
+  color: $clr-light;
   text-align: center;
-  background-image: url(/assets/backgrounds/abstract_blue_ball.jpeg);
-}
-.section__subtitle--work {
-  color: var(--clr-light-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
 }
 
 .portfolio {
@@ -18,5 +10,21 @@
 }
 
 .portfolio__item {
-  background: var(--clr-light-dark);
+  background: $clr-light-dark;
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: 0.5;
 }
