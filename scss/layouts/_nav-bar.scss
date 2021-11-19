@@ -3,39 +3,41 @@
   width: 100%;
   justify-content: flex-end;
   padding: 0 3em 0 2em;
-  background-color: $clr-green-light;
-  position: fixed;
+  background-color: #b3c4c6;
+  position: sticky;
   top: 0;
   font-weight: 800;
   color: $clr-dark;
   text-decoration: none;
+  // opacity: 3;
   // text-transform: uppercase;
 }
 .nav__list {
   display: flex;
-  padding: 0 2em;
+  padding: 0 1em;
   gap: 20px;
   list-style: none;
   align-items: center;
   justify-content: flex-end;
-  font-weight: $fw-bold;
-  color: $clr-dark;
+  font-weight: 900;
+  color: $clr-light;
 }
 a {
   text-decoration: none;
 }
 a:link {
   color: rgb(49, 80, 104);
+  text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(160, 144, 160);
+  color: rgb(55, 53, 53);
 }
 
 a:hover {
-  color: #2c8c94;
+  color: #428e98;
 }
 
 a:active {
-  color: rgb(119, 176, 242);
+  color: rgb(143, 140, 140);
 }

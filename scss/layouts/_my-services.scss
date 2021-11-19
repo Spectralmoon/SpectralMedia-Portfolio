@@ -1,68 +1,80 @@
-@media (min-width: 600px) {
-  .my-services {
-    background-color: $clr-dark;
-    background-image: url(../../assets/backgrounds/blue_background.png);
-    background-size: cover;
-    color: $clr-light;
-    text-align: center;
-    // background-blend-mode: multiply;
-  }
-  .section__title--services {
-    color: $clr-accent;
-    position: relative;
-  }
-  .section__title--services::after {
-    content: "";
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: $clr-light;
-    opacity: 0, 25;
-  }
-  .service {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    flex: 1;
-  }
+.my-services {
+  background-color: $clr-dark;
+  background: url(../assets/backgrounds/dark_blue_background.jpeg);
+  background-size: cover;
+  color: $clr-light;
+  text-align: center;
+}
+
+.section__title--services {
+  color: $clr-accent;
+  position: relative;
+}
+.my-services-background {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: $clr-light;
+  opacity: 0, 25;
+}
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+.services {
+  margin-bottom: 4em;
+  display: flex;
+}
+.text_align {
+  text-align: left;
+}
+
+@media (min-width: 800px) {
   .services {
-    margin-bottom: 4em;
     display: flex;
-  }
-
-  @media (min-width: 800px) {
-    .services {
-      display: flex;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      /* .flex-parent { display: flex; }
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /* .flex-parent { display: flex; }
 .flex-parent > * { flex: 1; } */
-    }
-
-    .service :nth-child(1) {
-      margin-left: 2em;
-    }
   }
 
-  .btn {
-    display: inline-block;
-    padding: 0.5em 2.5em;
-    background: $clr-accent;
-    color: $clr-dark;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: $fw-bold;
-    transition: transform 900ms ease-in-out;
-    z-index: 1;
-    color: $clr-light;
+  .service :nth-child(1) {
+    margin-left: 2em;
   }
+}
 
-  .btn:hover {
-    transform: scale(1.1);
-  }
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: $clr-accent;
+  color: $clr-light;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: $fw-bold;
+  transition: transform 900ms ease-in-out;
+  z-index: 1;
+  color: $clr-light;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: $clr-green-light;
+  z-index: 1;
 }

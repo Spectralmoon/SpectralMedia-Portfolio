@@ -65,3 +65,12 @@
   transform: scale(1.2);
   opacity: 0.6;
 }
+
+@media (max-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: mansonry;
+    grid-auto-flow: dense;
+  }
+}
