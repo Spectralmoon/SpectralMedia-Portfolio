@@ -100,6 +100,9 @@ h3 {
   background-color: #e0eeef;
   position: fixed;
   top: 0;
+  font-weight: 800;
+  color: #303030;
+  text-decoration: none;
 }
 
 .nav__list {
@@ -110,10 +113,27 @@ h3 {
   align-items: center;
   justify-content: flex-end;
   font-weight: 900;
+  color: #303030;
 }
 
 a {
   text-decoration: none;
+}
+
+a:link {
+  color: #315068;
+}
+
+a:visited {
+  color: #a090a0;
+}
+
+a:hover {
+  color: #2c8c94;
+}
+
+a:active {
+  color: #77b0f2;
 }
 
 .intro {
@@ -129,7 +149,7 @@ a {
   background-color: #2c8c94;
 }
 
-section__title {
+.section__title {
   margin-bottom: 0.25em;
 }
 
@@ -149,6 +169,10 @@ section__title {
   font-family: "Jost", sans-serif;
   margin-bottom: 1em;
   padding: 9em;
+}
+.section__title--intro .strong_header {
+  font-weight: 900;
+  font-size: 3rem;
 }
 
 @media (min-width: 600px) {
@@ -291,17 +315,57 @@ section__title {
 .my-work {
   background-color: #303030;
   color: #fff;
+}
+
+.container_work {
   text-align: center;
+  margin-bottom: 3em;
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 60rem;
+  margin: 0 auto;
+  gap: 1em;
+  display: column;
+  columns: 3;
+  gap: 3em;
+}
+
+.portfolio > * {
+  margin-bottom: 1 em;
+  break-inside: avoid;
+}
+
+@supports (grid-template-rows: masonry) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat 4 columns, 1fr;
+    grid-template-rows: masonry;
+    grid-auto-flow: dense;
+  }
+
+  .portfolio > * {
+    margin-bottom: 9em;
+    padding-bottom: 3em;
+  }
+}
+.featured {
+  grid-column: span 2;
+}
+
+.portfolio__img {
+  box-sizing: border-box;
+}
+
+.featured {
+  grid-row: span 2;
 }
 
 .portfolio__item {
   background: #7c7c7c;
   overflow: hidden;
+  padding: 3 em;
+  gap: 2 em;
 }
 
 .portfolio__img {
@@ -316,7 +380,7 @@ section__title {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .footer {

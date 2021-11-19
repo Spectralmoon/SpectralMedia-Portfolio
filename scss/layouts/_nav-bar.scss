@@ -6,6 +6,10 @@
   background-color: $clr-green-light;
   position: fixed;
   top: 0;
+  font-weight: 800;
+  color: $clr-dark;
+  text-decoration: none;
+  // text-transform: uppercase;
 }
 .nav__list {
   display: flex;
@@ -15,7 +19,23 @@
   align-items: center;
   justify-content: flex-end;
   font-weight: $fw-bold;
+  color: $clr-dark;
 }
 a {
   text-decoration: none;
+}
+a:link {
+  color: rgb(49, 80, 104);
+}
+
+a:visited {
+  color: rgb(160, 144, 160);
+}
+
+a:hover {
+  color: #2c8c94;
+}
+
+a:active {
+  color: rgb(119, 176, 242);
 }

@@ -1,12 +1,12 @@
-@import "b-custom-properties/root";
+@import "styles/root";
 
-@import "a-base/1-resets";
-@import "b-custom-properties/colors";
-@import "b-custom-properties/2-general-styles";
+@import "base/reset";
+@import "styles/colors";
+@import "styles/general";
 
-@import "b-custom-properties/3-typography";
-@import "b-custom-properties/box-shadow";
-@import "b-custom-properties/buttons";
+@import "styles/typography";
+@import "styles/box-shadow";
+@import "styles/buttons";
 
 @import "layouts/nav-bar";
 @import "layouts/introduction";

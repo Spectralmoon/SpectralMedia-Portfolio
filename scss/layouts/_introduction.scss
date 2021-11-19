@@ -10,7 +10,7 @@
   display: inline-block;
   background-color: $clr-accent;
 }
-section__title {
+.section__title {
   margin-bottom: 0.25em;
 }
 
@@ -32,6 +32,10 @@ section__title {
     font-family: $ff-primary;
     margin-bottom: 1em;
     padding: 9em;
+  }
+  .strong_header {
+    font-weight: $fw-bold;
+    font-size: $fs-h1;
   }
 }
 
