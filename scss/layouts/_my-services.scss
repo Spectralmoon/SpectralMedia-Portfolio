@@ -6,10 +6,6 @@
   text-align: center;
 }
 
-.section__title--services {
-  color: $clr-accent;
-  position: relative;
-}
 .my-services-background {
   position: relative;
   height: 100%;
@@ -17,6 +13,10 @@
   padding: 1rem;
   margin-bottom: 1rem;
   z-index: 1;
+}
+.section__title--services {
+  color: $clr-accent;
+  position: relative;
 }
 
 .section__title--services::after {
@@ -28,16 +28,21 @@
   background: $clr-light;
   opacity: 0, 25;
 }
+// .service {
+//   max-width: 500px;
+//   margin: 0 auto;
+//   padding: 0 1rem;
+//   flex: 1;
+
+.services {
+  margin-bottom: 2em;
+  // display: flex;
+}
 .service {
   max-width: 500px;
   margin: 0 auto;
-  padding: 0 1rem;
-  flex: 1;
 }
-.services {
-  margin-bottom: 4em;
-  display: flex;
-}
+
 .text_align {
   text-align: left;
 }

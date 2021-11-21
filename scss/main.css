@@ -118,23 +118,8 @@ h3 {
 
 a {
   text-decoration: none;
-}
-
-a:link {
-  color: #315068;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #373535;
-}
-
-a:hover {
-  color: #428e98;
-}
-
-a:active {
-  color: #8f8c8c;
+  color: #fff;
+  outline: #303030;
 }
 
 .intro {
@@ -211,11 +196,6 @@ a:active {
   text-align: center;
 }
 
-.section__title--services {
-  color: #2c8c94;
-  position: relative;
-}
-
 .my-services-background {
   position: relative;
   height: 100%;
@@ -223,6 +203,11 @@ a:active {
   padding: 1rem;
   margin-bottom: 1rem;
   z-index: 1;
+}
+
+.section__title--services {
+  color: #2c8c94;
+  position: relative;
 }
 
 .section__title--services::after {
@@ -235,16 +220,13 @@ a:active {
   opacity: 0, 25;
 }
 
+.services {
+  margin-bottom: 2em;
+}
+
 .service {
   max-width: 500px;
   margin: 0 auto;
-  padding: 0 1rem;
-  flex: 1;
-}
-
-.services {
-  margin-bottom: 4em;
-  display: flex;
 }
 
 .text_align {
@@ -313,7 +295,6 @@ a:active {
     grid-row: 2;
     position: relative;
     left: -1em;
-    width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
     z-index: -1;
@@ -323,6 +304,7 @@ a:active {
     grid-area: img;
     position: relative;
     z-index: -1;
+    min-width: 300px;
   }
 }
 .my-work {

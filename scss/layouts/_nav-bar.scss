@@ -24,20 +24,23 @@
 }
 a {
   text-decoration: none;
+  color: $clr-light;
+  text
 }
 a:link {
-  color: rgb(49, 80, 104);
+  color: $clr-light;
   text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(55, 53, 53);
+  color: $clr-light-dark;
+  text-decoration: underline;
 }
 
-a:hover {
-  color: #428e98;
-}
+// a:hover {
+//   color: #428e98;
+// }
 
-a:active {
-  color: rgb(143, 140, 140);
-}
+// a:active {
+//   color: rgb(143, 140, 140);
+// }
