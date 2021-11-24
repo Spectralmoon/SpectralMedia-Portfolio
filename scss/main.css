@@ -123,12 +123,11 @@ a {
 
 a:link {
   color: #fff;
-  text-decoration: underline;
 }
 
 a:visited {
-  color: #7c7c7c;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: dotted;
 }
 
 .intro {

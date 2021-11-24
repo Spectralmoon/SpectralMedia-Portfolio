@@ -28,12 +28,12 @@ a {
 }
 a:link {
   color: $clr-light;
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
 a:visited {
-  color: $clr-light-dark;
-  text-decoration: underline;
+  color: $clr-light;
+  text-decoration: dotted;
 }
 
 // a:hover {
