@@ -28,19 +28,15 @@
   background: $clr-light;
   opacity: 0, 25;
 }
-// .service {
-//   max-width: 500px;
-//   margin: 0 auto;
-//   padding: 0 1rem;
-//   flex: 1;
 
 .services {
   margin-bottom: 2em;
-  // display: flex;
 }
+// display: flex;
+
 .service {
-  max-width: 500px;
-  margin: 0 auto;
+  // max-width: 500px;
+  margin: 0 3rem;
 }
 
 .text_align {
@@ -50,15 +46,15 @@
 @media (min-width: 800px) {
   .services {
     display: flex;
-    max-width: 1000px;
+    // max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    /* .flex-parent { display: flex; }
-.flex-parent > * { flex: 1; } */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .service :nth-child(1) {
-    margin-left: 2em;
+    margin: 0 auto;
   }
 }
 
